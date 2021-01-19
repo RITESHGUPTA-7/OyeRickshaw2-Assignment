@@ -1,0 +1,59 @@
+                        <!-- Project using simple HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oye!! Rickshaw Calculator</title>
+    <link rel="stylesheet" type="text/css" href="oyerickshaw2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+
+    <div class="calframe">
+
+        <form class="calculator" name="calculate">
+
+            <div class="screen">
+
+                <input class="input-scr" id="input1" type="text" name="scr1">
+                <input class="result-scr" id="output1" type="text" name="scr2" value='0'>
+
+            </div>
+
+            <div class="btn-body">
+
+                <button type="button" class="numbers light-btn" onclick="calc(this)"> C </button>
+                <button type="button" class="numbers light-btn" onclick="calc(this)"> +/- </button>
+                <button type="button" class="numbers light-btn" onclick="calc(this)"> % </button>
+                <button type="button" class="numbers operator"  onclick="calc(this)"> ÷ </button>
+                <button type="button" class="numbers" onclick="calc(this)" > 7 </button>
+                <button type="button" class="numbers" onclick="calc(this)" > 8 </button>
+                <button type="button" class="numbers" onclick="calc(this)" > 9 </button>
+                <button type="button" class="numbers operator"  onclick="calc(this)"> x </button>
+                <button type="button" class="numbers" onclick="calc(this)" > 4 </button>
+                <button type="button" class="numbers" onclick="calc(this)" > 5 </button>
+                <button type="button" class="numbers" onclick="calc(this)" > 6 </button>
+                <button type="button" class="numbers operator"  onclick="calc(this)"> - </button>
+                <button type="button" class="numbers" onclick="calc(this)" > 1 </button>
+                <button type="button" class="numbers" onclick="calc(this)" > 2 </button>
+                <button type="button" class="numbers" onclick="calc(this)" > 3 </button>
+                <button type="button" class="numbers operator"  onclick="calc(this)"> + </button>
+                <button type="button" class="numbers" onclick="calc(this)" > 0 </button>
+                <button type="button" class="numbers" onclick="calc(this)">  </button>
+                <button type="button" class="numbers operator"  onclick="calc(this)"> . </button>
+                <button type="button" class="numbers equals" onclick="document.calculate.scr2.value=eval(document.calculate.scr1.value)">=</button>
+
+            </div>
+
+        </form>
+
+    </div>
+<script src="oyerickshaw2.js"></script>
+</body>
+
+</html>
